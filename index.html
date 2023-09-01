@@ -19,24 +19,6 @@
       <a href="https://www.kiu.edu.ge/uploads/CyberSecurityTrainingProgramAgenda.pdf"><input type="submit"
           class="submit" align="center" /></a>
   </div>
-  <script>
-    // Requiring fs module in which writeFile function is defined:
-    const fs = require('fs');
-
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
-    var fullname = fname + lname;
-
-    // data which will write in a file
-    let data = fullname;
-    console.log(data);
-    // Write "data" in "file.txt":
-    fs.writeFile('Pain.txt', data, (err) => {
-      // In case of an error trhow err:
-      console.log(data);
-      if (err) throw err;
-    })
-  </script>
 </body>
 
 </html>
